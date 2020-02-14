@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple calc</title>
+  </head>
+  <body>
+    <div class="container ">
+      <h1>Simple calculator</h1>
+      <p>Press button for calc</p>
+      <button
+        type="button"
+        class="btn btn-info btn-lg"
+        data-toggle="modal"
+        data-target="#modalCalc"
+      >
+        Open calc
+      </button>
+
+      <div class="modal fade" id="modalCalc" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Simple Calc</h5>
+            </div>
+            <div class="modal-body">
+              <div class="calculator">
+                <div class="lot-inputs">
+                  <div class="calculator-inputs " id="choosed_input1">
+                    <input type="checkbox" id="choosed-checkbox1" />
+                    <input
+                      type="number"
+                      class="input-numbers1"
+                      id="row-first"
+                      min="0"
+                    />
+                    <input
+                      type="number"
+                      class="input-numbers2"
+                      id="row-second"
+                      min="0"
+                    />
+                    <input
+                      type="number"
+                      class="input-numbers3"
+                      id="row-third"
+                      min="0"
+                    />
+                  </div>
+                  <div class="calculator-inputs" id="choosed_input2">
+                    <input type="checkbox" id="choosed-checkbox2" />
+                    <input type="number" min="0" class="input-numbers1" />
+                    <input type="number" min="0" class="input-numbers2" />
+                    <input type="number" min="0" class="input-numbers3" />
+                  </div>
+                  <div class="calculator-inputs" id="choosed_input3">
+                    <input type="checkbox" id="choosed-checkbox3" />
+                    <input type="number" min="0" class="input-numbers1" />
+                    <input type="number" min="0" class="input-numbers2" />
+                    <input type="number" min="0" class="input-numbers3" />
+                  </div>
+                </div>
+                <div class="calculator-results">
+                  <div class="result" id="result-row1"></div>
+                  <div class="result"></div>
+                  <div class="result"></div>
+                </div>
+              </div>
+              <div class="operation">
+                <div class="operation-title"><h6>Choose box</h6></div>
+                <div class="operation-operations">
+                  <div class="operations-box">
+                    <input type="radio" id="sum" name="radio_button" /><label
+                      for="sum"
+                      >Sum</label
+                    >
+                  </div>
+                  <div class="operations-box">
+                    <input
+                      type="radio"
+                      id="multiply"
+                      name="radio_button"
+                    /><label for="multiply">Multiply</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-default btn-close"
+                type="button"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

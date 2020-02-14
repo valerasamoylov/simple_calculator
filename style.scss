@@ -1,0 +1,80 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+%started-backdown {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  @extend %started-backdown;
+  text-align: center;
+}
+
+.calculator {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+
+.lot-inputs {
+  display: flex;
+  flex-direction: column;
+  .calculator-inputs {
+    padding: 0.5rem;
+    display: flex;
+
+    &:nth-child(3) {
+      margin-bottom: initial;
+    }
+    input[type="number"] {
+      width: 4rem;
+      margin-right: 1rem;
+    }
+    input[type="checkbox"] {
+      align-self: center;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.result {
+  align-self: center;
+}
+
+.operation {
+  margin-top: 1rem;
+  .operation-title {
+    text-align: left;
+  }
+  .operation-operations {
+    display: flex;
+    .operations-box {
+      border: 2px solid $primary-color;
+      padding: 0 1.2rem 0 0.1rem;
+      &:first-child {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.choosed-background {
+  background-color: rgb(82, 209, 32);
+}
+
+@media screen and (max-width: 475px) {
+  .calculator-inputs {
+    flex-direction: column;
+    input[type="number"] {
+      margin: 0.5rem auto;
+    }
+    input[type="checkbox"] {
+      align-self: center;
+    }
+  }
+  .operation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
