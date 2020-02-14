@@ -23,8 +23,8 @@ Simple calculator give you the ability to sum or multiply sequence of numbers an
 
 If you want to continue codding:
 
-1. Clone the repo: `git clone https://github.com/valerasamoylov/react-mongodb-app.git`
-2. Select a directory: `cd react-mongodb-app`
+1. Clone the repo: `git clone https://github.com/valerasamoylov/simple_calculator.git`
+2. Select a directory: `cd simple_calculator`
 
 
 [Twitter Bootstrap]: https://getbootstrap.com/
