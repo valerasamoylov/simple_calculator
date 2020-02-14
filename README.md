@@ -17,7 +17,7 @@ Simple calculator give you the ability to sum or multiply sequence of numbers an
     ![Home_page](./img/home-page.jpg "Home page")
 
 2.  **Menu with multiply**
-    ![All main information about calculator and  can it to do ](./img/menu-with-multiply "Main information")
+    ![All main information about calculator and  can it to do ](./img/menu-with-multiply.jpg "Main information")
 
 ### Installation
 
