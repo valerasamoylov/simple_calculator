@@ -11,7 +11,7 @@ $("input[type=checkbox]").on("change", function() {
 
 $("#sum").prop("checked", true);
 
-/* if check checkbox will be add*/
+/* if check checkbox Add will be add*/
 
 $(function() {
   $("#sum").on("change", function() {
@@ -38,6 +38,8 @@ function Add() {
   $("#result-row2").html(result2);
   $("#result-row3").html(result3);
 }
+
+/* if check checkbox Multiply will be multiply*/
 
 $(function() {
   $("#multiply").on("change", function() {
